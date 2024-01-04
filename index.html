@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-el">
+        <div class="container">
+            <div class="container_score">
+                <h2>HOME</h2>
+                <div class="score_bord">
+                    <h3 class="score_bord_num" id="score-home-el">0</h3>
+                </div>
+                <div class="score_btn">
+                    <button class="score-btn" onclick="homeAdd1()">+1</button>
+                    <button class="score-btn" onclick="homeAdd2()">+2</button>
+                    <button class="score-btn" onclick="homeAdd3()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h2>GUEST</h2>
+                <div class="score_bord">
+                    <h3 class="score_bord_num" id="score-guest-el">0</h3>
+                </div>
+                <div>
+                    <button class="score-btn" onclick="guestAdd1()">+1</button>
+                    <button class="score-btn" onclick="guestAdd2()">+2</button>
+                    <button class="score-btn" onclick="guestAdd3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button class="newGame" onclick="newGame()">New Game</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
